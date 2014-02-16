@@ -54,7 +54,9 @@ public class TestActivity extends Activity {
 ```
 
 ## 其它
-除了json object，peanut还提供了json array的处理，基本类似，事实上，你可以任意扩展volley的Request来满足自己的需要，可以参考PeanutRequest的实现
+1. 除了json object，peanut还提供了json array的处理，基本类似，事实上，你可以任意扩展volley的Request来满足自己的需要，可以参考PeanutRequest的实现
+2. 本类库同时支持gradle构建和一般的Eclipse/idea构建。由于依赖android-volley，所以如果不使用gradle你需要自行[下载volley][]并引入
+
 
 ## License
 > ```
@@ -64,3 +66,4 @@ public class TestActivity extends Activity {
 > ```
 
 [视频]: http://www.google.com/events/io/2010/sessions/developing-RESTful-android-apps.html "developing-RESTful-android-apps"
+[下载volley]: https://android.googlesource.com/platform/frameworks/volley "android-volley"
