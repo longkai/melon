@@ -19,7 +19,7 @@ public class PeanutAPI {
   /** 通常作为POST和PUT方法中的请求参数，其它方式赋null即可 */
   public final Map<String, String> params;
 
-  private PeanutAPI(int method, String url, boolean authRequired, Map<String, String> params) {
+  public PeanutAPI(int method, String url, boolean authRequired, Map<String, String> params) {
     this.method = method;
     this.url = url;
     this.authRequired = authRequired;
