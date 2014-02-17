@@ -12,7 +12,7 @@ import com.android.volley.NetworkResponse;
 import com.android.volley.ParseError;
 import com.android.volley.Response;
 import com.android.volley.toolbox.HttpHeaderParser;
-import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonRequest;
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -29,7 +29,7 @@ import java.util.Map;
  *
  * @author longkai
  */
-public class PeanutArrayRequest extends JsonArrayRequest {
+public class PeanutArrayRequest extends JsonRequest<JSONArray> {
   private Context context;
   private PeanutAPI api;
   private PeanutProcessor<JSONArray> processor;
@@ -39,7 +39,7 @@ public class PeanutArrayRequest extends JsonArrayRequest {
                             PeanutProcessor<JSONArray> processor,
                             Response.Listener<JSONArray> listener,
                             Response.ErrorListener errorListener) {
-    super(api.url, null, errorListener);
+    super(api.method, api.url, null, listener, errorListener);
     this.context = context;
     this.api = api;
     this.processor = processor;
