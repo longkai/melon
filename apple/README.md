@@ -11,7 +11,7 @@ please click [here][2].
 本demo实现了Android的Quick Return UI Pattern的header和footer，包括了ScrollView与ListView。类似与Chrome向下滑的时候隐藏掉地址栏，向上滑的时候显示地址栏。footer的效果与此类似。
 
 ## 结构
-library为两个类库，sample是示例代码，依赖suppoert-v4与supportv-13，需要自己添加。
+library是类库，sample是示例代码，依赖suppoert-v4与support-v13，需要自己添加。
 
 ## 致谢
 fork from Roman Nurik with Nick Butcher and Larswerkman, many thanks
